@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<settings xsi:schemaLocation='http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd'
+          xmlns='http://maven.apache.org/SETTINGS/1.0.0' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+    <servers>
+        <server>
+            <id>bintray-openkit-parfka-java</id>
+            <username>jsding2019</username>
+            <password>c41b7393b61b85220374d82cb1af55cb359afaa9</password>
+        </server>
+    </servers>
+    <profiles>
+        <profile>
+            <repositories>
+                <repository>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                    <id>central</id>
+                    <name>bintray</name>
+                    <url>http://jcenter.bintray.com</url>
+                </repository>
+                <repository>
+                    <snapshots>
+                        <enabled>
+                            false
+                        </enabled>
+                    </snapshots>
+                    <id>
+                        bintray-openkit-parfka-java
+                    </id>
+                    <name>
+                        bintray
+                    </name>
+                    <url>
+                        https://dl.bintray.com/openkit/parfka-java
+                    </url>
+                </repository>
+
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                    <id>central</id>
+                    <name>bintray-plugins</name>
+                    <url>http://jcenter.bintray.com</url>
+                </pluginRepository>
+
+            </pluginRepositories>
+            <id>bintray</id>
+        </profile>
+    </profiles>
+    <activeProfiles>
+        <activeProfile>bintray</activeProfile>
+    </activeProfiles>
+</settings>

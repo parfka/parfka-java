@@ -72,8 +72,7 @@ public class Parfka {
 		if(bCustomServer){
 			return sServerPath + "/" + context;
 		}else{
-			return ParseConstants.API_ENDPOINT + "/" + ParseConstants.API_VERSION
-					+ "/" + context;
+			return ParseConstants.API_ENDPOINT + "/parfka/" + context;
 		}
 	}
 

@@ -40,20 +40,17 @@ repositories {
 }
 
 dependencies {
-    compile 'org.slf4j:slf4j-api:1.7.12'
-    compile 'org.slf4j:slf4j-log4j12:1.7.12'
-    compile 'org.apache.httpcomponents:httpclient:4.3.2'
-    compile 'org.apache.httpcomponents:httpcore:4.3.1'
-    compile 'org.json:json:20131018'
-    compile 'commons-logging:commons-logging:1.2'
-    compile 'commons-codec:commons-codec:1.9'
-    testCompile 'junit:junit:4.11'
-    testCompile 'ch.qos.logback:logback-classic:0.9.28'
-    testCompile 'ch.qos.logback:logback-core:0.9.28'
+    implementation 'org.slf4j:slf4j-api:1.7.12'
+    implementation 'org.slf4j:slf4j-log4j12:1.7.12'
+    implementation 'org.json:json:20180813'
+    implementation 'org.apache.httpcomponents:httpclient:4.5.8'
+    implementation 'org.apache.httpcomponents:httpcore:4.4.11'
+    implementation 'commons-logging:commons-logging:1.2'
+    implementation 'commons-codec:commons-codec:1.12'
 }
 
 group = 'com.parfka'
-version = '1.5'
+version = '1.5.1'
 description = 'parfka-java'
 sourceCompatibility = '1.8'
 
@@ -78,10 +75,10 @@ bintray {
         licenses = ['Apache-2.0']
         publish = true
         version {
-            name = '0.9.2'
+            name = '0.9.3'
             desc = 'Parfka SDK (Port parse on Kafka)'
             released  = new Date()
-            vcsTag = '0.9.2'
+            vcsTag = '0.9.3'
         }
     }
 }

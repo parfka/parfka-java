@@ -2,7 +2,7 @@ package com.parfka;
 
 public class ParseConstants {
 
-	public static final String API_ENDPOINT = "https://api.parse.com";
+	public static final String API_ENDPOINT = "http://parfka.playstrap.com:8080";
 	public static final String API_VERSION = "1";
 
 	public static final String HEADER_CONTENT_TYPE = "Content-Type";

@@ -50,7 +50,7 @@ dependencies {
 }
 
 group = 'com.parfka'
-version = '1.5.1'
+version = '1.5.2'
 description = 'parfka-java'
 sourceCompatibility = '1.8'
 
@@ -75,10 +75,10 @@ bintray {
         licenses = ['Apache-2.0']
         publish = true
         version {
-            name = '0.9.3'
+            name = '1.5.2'
             desc = 'Parfka SDK (Port parse on Kafka)'
             released  = new Date()
-            vcsTag = '0.9.3'
+            vcsTag = '1.5.2'
         }
     }
 }
